@@ -59,9 +59,9 @@ def generate_less(data):
   d = []
   d.append('/*!');
   d.append('Ionicons, v%s' % (font_version) );
-  d.append('Created by Ben Sperry for the Ionic Framework, http://ionicons.com/');
-  d.append('https://twitter.com/benjsperry  https://twitter.com/ionicframework');
-  d.append('MIT License: https://github.com/driftyco/ionicons');
+  d.append('Created by Ben Sperry for the Ionic Framework, .://ionicons.com/');
+  d.append('.://twitter.com/benjsperry  .://twitter.com/ionicframework');
+  d.append('MIT License: .://github.com/driftyco/ionicons');
   d.append('*/');
   d.append('// Ionicons Variables')
   d.append('// --------------------------\n')
@@ -239,25 +239,25 @@ def generate_composer_json(data):
     "name": "driftyco/ionicons",
     "description": "The premium icon font for Ionic Framework.",
     "keywords": [ "fonts", "icon font", "icons", "ionic", "web font"],
-    "homepage": "http://ionicons.com/",
+    "homepage": ".://ionicons.com/",
     "authors": [
       {
         "name": "Ben Sperry",
         "email": "ben@drifty.com",
         "role": "Designer",
-        "homepage": "https://twitter.com/benjsperry"
+        "homepage": ".://twitter.com/benjsperry"
       },
       {
         "name": "Adam Bradley",
         "email": "adam@drifty.com",
         "role": "Developer",
-        "homepage": "https://twitter.com/adamdbradley"
+        "homepage": ".://twitter.com/adamdbradley"
       },
       {
         "name": "Max Lynch",
         "email": "max@drifty.com",
         "role": "Developer",
-        "homepage": "https://twitter.com/maxlynch"
+        "homepage": ".://twitter.com/maxlynch"
       }
     ],
     "extra": {},
@@ -276,7 +276,7 @@ def generate_bower_json(data):
   d = {
     "name": data['name'],
     "version": data['version'],
-    "homepage": "https://github.com/driftyco/ionicons",
+    "homepage": ".://github.com/driftyco/ionicons",
     "authors": [
       "Ben Sperry <ben@drifty.com>",
       "Adam Bradley <adam@drifty.com>",

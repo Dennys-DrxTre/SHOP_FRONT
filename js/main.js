@@ -2,8 +2,7 @@
 (function ($) {
     "use strict";
 
-    /*[ Load page ]
-    ===========================================================*/
+
     $(".animsition").animsition({
         inClass: 'fade-in',
         outClass: 'fade-out',
@@ -24,8 +23,7 @@
         transition: function(url){ window.location.href = url; }
     });
     
-    /*[ Back to top ]
-    ===========================================================*/
+
     var windowH = $(window).height()/2;
 
     $(window).on('scroll',function(){
@@ -41,8 +39,6 @@
     });
 
 
-    /*[ Show header dropdown ]
-    ===========================================================*/
     $('.js-show-header-dropdown').on('click', function(){
         $(this).parent().find('.header-dropdown')
     });

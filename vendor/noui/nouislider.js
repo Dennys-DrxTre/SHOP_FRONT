@@ -101,7 +101,7 @@
 		return pieces.length > 1 ? pieces[1].length : 0;
 	}
 
-	// http://youmightnotneedjquery.com/#add_class
+	// .://youmightnotneedjquery.com/#add_class
 	function addClass ( el, className ) {
 		if ( el.classList ) {
 			el.classList.add(className);
@@ -110,7 +110,7 @@
 		}
 	}
 
-	// http://youmightnotneedjquery.com/#remove_class
+	// .://youmightnotneedjquery.com/#remove_class
 	function removeClass ( el, className ) {
 		if ( el.classList ) {
 			el.classList.remove(className);
@@ -119,12 +119,12 @@
 		}
 	}
 
-	// https://plainjs.com/javascript/attributes/adding-removing-and-testing-for-classes-9/
+	// .://plainjs.com/javascript/attributes/adding-removing-and-testing-for-classes-9/
 	function hasClass ( el, className ) {
 		return el.classList ? el.classList.contains(className) : new RegExp('\\b' + className + '\\b').test(el.className);
 	}
 
-	// https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY#Notes
+	// .://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY#Notes
 	function getPageOffset ( doc ) {
 
 		var supportPageOffset = window.pageXOffset !== undefined;
@@ -160,7 +160,7 @@
 		};
 	}
 
-	// https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md
+	// .://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md
 	// Issue #785
 	function getSupportsPassive ( ) {
 
@@ -966,7 +966,7 @@ function closure ( target, options, originalOptions ){
 
 		handle.setAttribute('data-handle', handleNumber);
 
-		// https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex
+		// .://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex
 		// 0 = focusable and reachable
 		handle.setAttribute('tabindex', '0');
 		handle.setAttribute('role', 'slider');
@@ -1397,7 +1397,7 @@ function closure ( target, options, originalOptions ){
 			// iOS safari does not, so it doesn't get to benefit from passive scrolling. iOS does support
 			// touch-action: manipulation, but that allows panning, which breaks
 			// sliders after zooming/on non-responsive pages.
-			// See: https://bugs.webkit.org/show_bug.cgi?id=133112
+			// See: .://bugs.webkit.org/show_bug.cgi?id=133112
 			if ( !supportsPassive ) {
 				e.preventDefault();
 			}
@@ -1596,7 +1596,7 @@ function closure ( target, options, originalOptions ){
 
 		// Fix #498
 		// Check value of .buttons in 'start' to work around a bug in IE10 mobile (data.buttonsProperty).
-		// https://connect.microsoft.com/IE/feedback/details/927005/mobile-ie10-windows-phone-buttons-property-of-pointermove-event-always-zero
+		// .://connect.microsoft.com/IE/feedback/details/927005/mobile-ie10-windows-phone-buttons-property-of-pointermove-event-always-zero
 		// IE9 has .buttons and .which zero on mousemove.
 		// Firefox breaks the spec MDN defines.
 		if ( navigator.appVersion.indexOf("MSIE 9") === -1 && event.buttons === 0 && data.buttonsProperty !== 0 ) {
@@ -1701,7 +1701,7 @@ function closure ( target, options, originalOptions ){
 			// which is scroll blocking. The selectstart event is supported by FireFox starting from version 52,
 			// meaning the only holdout is iOS Safari. This doesn't matter: text selection isn't triggered there.
 			// The 'cursor' flag is false.
-			// See: http://caniuse.com/#search=selectstart
+			// See: .://caniuse.com/#search=selectstart
 			scope_Body.addEventListener('selectstart', preventDefault, false);
 		}
 
